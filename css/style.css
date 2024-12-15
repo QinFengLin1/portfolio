@@ -1,104 +1,76 @@
-/* General Styles */
 body {
-    font-size: 16px; /* Aangepaste stijl: Stelt de basislettergrootte in voor de hele pagina */
+    font-size: 16px;
 }
 
-/* Image Grid */
 .image-grid img,
 .col-md-4 img {
-    width: 100%; /* Aangepaste stijl: Zorgt ervoor dat afbeeldingen de volledige breedte van hun container innemen */
-    height: 100%; /* Aangepaste stijl: Zorgt ervoor dat afbeeldingen de volledige hoogte van hun container innemen */
-    object-fit: cover; /* Aangepaste stijl: Zorgt ervoor dat afbeeldingen worden bijgesneden om de container te vullen zonder vervorming */
-    margin: 0; /* Aangepaste stijl: Verwijdert de standaard marge van afbeeldingen */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
 }
 
-/* Column Layout */
 .col-md-4 {
-    display: flex; /* Bootstrap: Flexbox wordt gebruikt voor een responsieve indeling */
-    flex-direction: column; /* Bootstrap: Stelt de flex-items in om in een kolom te worden weergegeven */
-    justify-content: stretch; /* Aangepaste stijl: Zorgt ervoor dat de flex-items de volledige hoogte van de container innemen */
-    padding: 0; /* Aangepaste stijl: Verwijdert de padding van de kolom */
+    display: flex;
+    justify-content: stretch;
+    padding: 0;
 }
 
-.square-box {
-    width: auto; /* Aangepaste stijl: Stelt de breedte in op automatisch, afhankelijk van de inhoud */
-    height: 240px; /* Aangepaste stijl: Stelt een vaste hoogte in voor de vierkante box */
-    color: white; /* Aangepaste stijl: Stelt de tekstkleur in op wit */
-    display: flex; /* Aangepaste stijl: Flexbox wordt gebruikt voor centreren */
-    align-items: center; /* Aangepaste stijl: Centreert de inhoud verticaal */
-    justify-content: center; /* Aangepaste stijl: Centreert de inhoud horizontaal */
-}
-
-/* Row Modifiers */
-.row.align-items-stretch {
-    align-items: stretch; /* Bootstrap: Zorgt ervoor dat alle rijen de hoogte van de hoogste item aannemen */
-}
-
-.row.flex-grow-1 {
-    flex-grow: 1; /* Bootstrap: Zorgt ervoor dat de rij kan groeien om de beschikbare ruimte in te nemen */
-}
-
-/* Hero Text */
 .hero-text {
-    background-color: rgb(64, 61, 61); /* Aangepaste stijl: Stelt de achtergrondkleur in voor de hero-sectie */
-    padding: 20px; /* Aangepaste stijl: Voegt padding toe rondom de tekst */
-    border-radius: 8px; /* Aangepaste stijl: Maakt de hoeken van de achtergrond afgerond */
-    text-align: center; /* Aangepaste stijl: Centreert de tekst */
-    flex-grow: 1; /* Aangepaste stijl: Laat de hero-tekst groeien om de beschikbare ruimte in te nemen */
-    display: flex; /* Aangepaste stijl: Flexbox wordt gebruikt voor centreren */
-    justify-content: center; /* Aangepaste stijl: Centreert de inhoud horizontaal */
-    align-items: center; /* Aangepaste stijl: Centreert de inhoud verticaal */
+    background-color: rgb(64, 61, 61);
+    padding: 50px;
+    height: 250px;
 }
 
-/* Navbar */
 .navbar {
-    background-color: black; /* Aangepaste stijl: Stelt de achtergrondkleur van de navigatiebalk in */
-    padding: 0.5rem 1rem; /* Aangepaste stijl: Voegt padding toe aan de navigatiebalk */
+    background-color: black;
+    padding: 0.5rem 1rem;
 }
 
 .navbar-brand img {
-    height: 80px; /* Aangepaste stijl: Stelt de hoogte van het logo in */
-    width: auto; /* Aangepaste stijl: Stelt de breedte van het logo in op automatisch */
+    height: 80px;
+    width: auto;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-    color: white !important; /* Aangepaste stijl: Stelt de kleur van de navigatietekst in op wit */
+    color: white !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ddd !important; /* Aangepaste stijl: Verandert de kleur van de navigatietekst bij hover */
+    color: #ddd !important;
 }
 
-/* Logo */
 .logo {
-    width: auto; /* Aangepaste stijl: Stelt de breedte van het logo in op automatisch */
-    height: 120px; /* Aangepaste stijl: Stelt de hoogte van het logo in */
-    float: left; /* Aangepaste stijl: Laat het logo naar links zweven */
+    width: auto;
+    height: 120px;
+    float: left;
 }
 
-/* Project Card */
 .project-card {
-    display: block; /* Aangepaste stijl: Zorgt ervoor dat de projectkaart als een blok wordt weergegeven */
-    text-align: center; /* Aangepaste stijl: Centreert de tekst in de projectkaart */
-    border: 1px solid #ccc; /* Aangepaste stijl: Voegt een lichte rand toe aan de projectkaart */
-    border-radius : 8px; /* Aangepaste stijl: Maakt de hoeken van de projectkaart afgerond */
-    margin-bottom: 20px; /* Aangepaste stijl: Voegt ruimte toe onder de projectkaart */
-    padding: 10px; /* Aangepaste stijl: Voegt padding toe binnen de projectkaart */
-    text-decoration: none; /* Aangepaste stijl: Verwijdert de standaard onderstreping van links */
-    color: inherit; /* Aangepaste stijl: Zorgt ervoor dat de tekstkleur de kleur van de bovenliggende elementen erft */
+    display: block;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card img {
-    max-width: 100%; /* Aangepaste stijl: Zorgt ervoor dat afbeeldingen binnen de projectkaart niet breder zijn dan de kaart zelf */
-    height: auto; /* Aangepaste stijl: Houdt de hoogte van de afbeelding automatisch in verhouding */
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
-    padding-top: 0px; /* Aangepaste stijl: Stelt de bovenste padding van de footer in */
-    padding-bottom: 0px; /* Aangepaste stijl: Stelt de onderste padding van de footer in */
-    font-size: 0.9rem; /* Aangepaste stijl: Stelt de lettergrootte van de footer in */
-    line-height: 0.9; /* Aangepaste stijl: Stelt de regelhoogte van de footer in */
+    padding-top: 0px;
+    font-size: 0.9rem;
+    line-height: 0.9;
+}
+
+aside {
+    border: 1px solid black;
 }
 
 #map { 
@@ -108,12 +80,12 @@ footer {
 
 @media (max-width: 1200px) {
     .hero-text {
-        height: 220px;
         font-size: 1.2rem;
+        padding: 20px;
     }
 
-    .col-md-4 {
-        margin-bottom: 20px;
+    .project-card img {
+        margin-bottom: 10px;
     }
 
     footer {
@@ -127,35 +99,40 @@ footer {
     }
 
     .hero-text {
-        height: auto;
         font-size: 1rem;
-        padding: 10px;
+        height: 250px;
+    }
+    img {
+        width: 100%;
+        height: 200px;
     }
 
-    #map {
-        height: 150px;
+    .col-12 {
+        margin-bottom: 0px;
     }
 
     footer {
         font-size: 0.7rem;
-        padding: 5px 0;
-    }
-
-    .project-card img {
-        margin-bottom: 15px;
+        padding: 10px 0;
     }
 }
 
 @media (max-width: 576px) {
     .hero-text {
         font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    aside {
+        margin-top: 30px;
     }
 
     footer {
         font-size: 0.6rem;
-    }
-
-    .navbar {
-        font-size: 0.8rem;
+        padding: 5px 0;
     }
 }
